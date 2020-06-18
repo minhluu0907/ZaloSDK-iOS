@@ -3,8 +3,7 @@
 set -e
 
 
-# version=$(grep "s.version[ ]*="  ZaloSDK.podspec | awk '{print $3}' | tr -d "'")
-version="2.5.0311"
+version=$(grep "s.version[ ]*="  ZaloSDK.podspec | awk '{print $3}' | tr -d "'")
 json_url="https://raw.githubusercontent.com/minhluu0907/ZaloSDK-iOS/master/"
 binary_url="https://github.com/minhluu0907/ZaloSDK-iOS/releases/download/$version"
 carthage_dir="CarthageFiles"
